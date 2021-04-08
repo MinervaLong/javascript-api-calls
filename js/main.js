@@ -30,3 +30,10 @@ const getJoke = async () => {
 
 // Event Listener so when the button is clicked the joke appears on the web
 jokeBtn.addEventListener('click',getJoke);
+
+/*------------------------LEVEL 2------------------------------*/
+
+// Store the p tag in a variable
+
+let weather = document.getElementById('weather');
+
