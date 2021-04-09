@@ -28,6 +28,19 @@ const getJoke = async () => {
 
 //getJoke(); Call the function for Exercise 1
 
+// EXERCISE 5 LEVEL 3 - Call to another joke API randomly
+
+let friendsApi = new Request("https://friends-quotes-api.herokuapp.com/quotes/random");
+
+const friendsJoke = async () => {
+    const answer = await fetch(friendsApi);
+    const data = await answer.json();
+    const {quote, character} = data;
+
+    const friendsJoke = randomJoke.textContent = `"${quote} - ${character}"`;
+    return friendsJoke
+}
+
 // Event Listener so when the button is clicked the joke appears on the web
 jokeBtn.addEventListener('click',getJoke);
 
