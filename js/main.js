@@ -22,7 +22,7 @@ const getJoke = async () => {
     const {joke} = data; // Get the joke from the JSON Object
     //console.log(joke); Exercise 1
     
-    const nextJoke = randomJoke.textContent = joke;
+    const nextJoke = randomJoke.textContent = `"${joke}"`;
     return nextJoke
 }
 

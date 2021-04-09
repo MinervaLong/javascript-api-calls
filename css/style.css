@@ -1,0 +1,99 @@
+/* RESET VALUES */
+
+* {
+    margin: unset;
+    box-sizing:unset;
+    padding: unset;
+    font-size: unset;
+    color: unset;
+    text-decoration: unset;
+}
+
+html,body{
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+/*BACKGROUND IMAGE*/
+
+body{
+    background-image:url('/img/bg.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FLEXBOX LAYOUT*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.container__weather {
+    padding: 2rem;
+    margin-bottom: 7rem;
+}
+
+/*WEATHER COMPONENT*/
+
+.container__weather {
+    font-weight: bold;
+}
+
+/* JOKES COMPONENT*/
+
+.joke {     /* Flexbox to align its children*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
+    align-self: center;
+    position: relative; /*Needed to fix the text bc is the container*/
+}
+
+.joke--style {
+    background-color: beige;
+    border-color: beige;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.joke__title {
+    font-size: 20pt;
+    margin-bottom: 13rem;
+}
+
+.joke__text {
+    font-weight: bold;
+    text-align: center;
+    position: absolute; /*Needed to fix the text, is what we want to fix*/
+}
+
+.joke__btn {
+    background-color: #3DD3DE;
+    border-color: #3DD3DE;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 0.5rem 1.8rem;
+    font-size: small;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 660px) {
+
+    .joke {
+        padding: 5rem 1rem;
+    }
+
+    .container__weather {
+        margin-bottom: 0rem;
+    }
+}
+
