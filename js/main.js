@@ -55,8 +55,9 @@ const randomCall = () => {
 }
 
 
-// Event Listener so when the button is clicked the joke appears on the web
-jokeBtn.addEventListener('click',getJoke);
+// Event Listener so when the button is clicked the joke calls to a function that will choose  which API
+// to call and show on the web
+jokeBtn.addEventListener('click',randomCall);
 
 /*------------------------LEVEL 2------------------------------*/
 
