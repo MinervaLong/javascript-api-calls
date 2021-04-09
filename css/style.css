@@ -84,3 +84,12 @@ body{
     font-size: small;
 }
 
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 660px) {
+
+    .joke {
+        padding: 5rem 1rem;
+    }
+}
+
