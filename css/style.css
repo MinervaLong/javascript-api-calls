@@ -24,3 +24,9 @@ html,body{
     justify-content: flex-start;
     align-content: center;
 }
+
+.container__weather {
+    padding: 2rem;
+    margin-bottom: 7rem;
+}
+
