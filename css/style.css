@@ -39,3 +39,15 @@ body{
     margin-bottom: 7rem;
 }
 
+/* JOKES COMPONENT*/
+
+.joke {     /* Flexbox to align its children*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
+    align-self: center;
+    position: relative; /*Needed to fix the text bc is the container*/
+}
+
