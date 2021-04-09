@@ -64,3 +64,8 @@ body{
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
 }
 
+.joke__title {
+    font-size: 20pt;
+    margin-bottom: 13rem;
+}
+
