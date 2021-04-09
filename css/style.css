@@ -14,3 +14,13 @@ html,body{
     box-sizing: border-box;
     
 }
+
+/* FLEXBOX LAYOUT*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
