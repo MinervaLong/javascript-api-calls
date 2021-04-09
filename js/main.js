@@ -41,6 +41,20 @@ const friendsJoke = async () => {
     return friendsJoke
 }
 
+const randomCall = () => {
+    let random = Math.floor((Math.random() * 10) + 1);
+    let choice;
+
+    if (random >= 1 && random <= 5) {
+        choice = getJoke();
+    }else if (random >= 6 && random <= 10) {
+        choice = friendsJoke();
+    }
+
+    return choice;
+}
+
+
 // Event Listener so when the button is clicked the joke appears on the web
 jokeBtn.addEventListener('click',getJoke);
 
