@@ -91,5 +91,9 @@ body{
     .joke {
         padding: 5rem 1rem;
     }
+
+    .container__weather {
+        margin-bottom: 0rem;
+    }
 }
 
