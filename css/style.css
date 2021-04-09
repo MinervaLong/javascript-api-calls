@@ -75,3 +75,12 @@ body{
     position: absolute; /*Needed to fix the text, is what we want to fix*/
 }
 
+.joke__btn {
+    background-color: #3DD3DE;
+    border-color: #3DD3DE;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 0.5rem 1.8rem;
+    font-size: small;
+}
+
