@@ -1,0 +1,16 @@
+/* RESET VALUES */
+
+* {
+    margin: unset;
+    box-sizing:unset;
+    padding: unset;
+    font-size: unset;
+    color: unset;
+    text-decoration: unset;
+}
+
+html,body{
+    height: 100%;
+    box-sizing: border-box;
+    
+}
