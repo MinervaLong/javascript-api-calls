@@ -39,6 +39,12 @@ body{
     margin-bottom: 7rem;
 }
 
+/*WEATHER COMPONENT*/
+
+.container__weather {
+    font-weight: bold;
+}
+
 /* JOKES COMPONENT*/
 
 .joke {     /* Flexbox to align its children*/
