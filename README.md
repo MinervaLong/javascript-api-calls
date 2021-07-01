@@ -6,4 +6,9 @@ This repository contains an example of an API call (about jokes) with async/awai
 
 [Here](https://codesandbox.io/s/javascript-api-calls-oneq5) is the codesandbox.
 
+## APIs used
+* [icanhazdadjoke](https://icanhazdadjoke.com/)
+* [Friends Quotes API](https://friends-quotes-api.herokuapp.com/)
+* [El tiempo](https://www.el-tiempo.net/api)
+
 (Weather text in Spanish and title & button text in Catalan)
