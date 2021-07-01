@@ -28,8 +28,6 @@ const getJoke = async () => {
 
 //getJoke(); Call the function for Exercise 1
 
-// Event Listener so when the button is clicked the joke appears on the web
-jokeBtn.addEventListener('click',getJoke);
 
 /*------------------------LEVEL 2------------------------------*/
 
@@ -51,3 +49,35 @@ fetch('https://www.el-tiempo.net/api/json/v2/provincias/08') // The fetch reques
 .catch((error) => { // In case there is an error
     console.log(error)
 })
+
+// EXERCISE 5 LEVEL 3 - Call to another joke API (alternate)
+
+let friendsApi = new Request("https://friends-quotes-api.herokuapp.com/quotes/random");
+
+const friendsJoke = async () => {
+    const answer = await fetch(friendsApi);
+    const data = await answer.json();
+    const {quote, character} = data;
+
+    const friendsJoke = randomJoke.textContent = `"${quote} - ${character}"`;
+    return friendsJoke
+}
+
+// Function to alternate de call to the APIs
+
+let clicked = false;
+
+const toggleCall = () => {   
+
+    if (!clicked) {
+        clicked = true;
+        getJoke();
+    }else {
+        clicked = false;
+        friendsJoke();
+    }
+}
+
+// Event Listener so when the button is clicked the joke calls to a function that will alternate the API
+// to call
+jokeBtn.addEventListener('click',toggleCall);
